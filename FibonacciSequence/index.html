@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">    
     <title>FibonacciSequence</title>
 </head>
 <body>
-    
+    <div class="container">
+        <h2>Fibonacci Series</h2>
+        <label for="terms">Enter the number of terms:</label>
+        <input type="text" id="terms" name="terms" placeholder="Enter a number">
+        <button onclick="generateFibonacci()">Generate</button>
+        <div id="output"></div>
+      </div>
+      <script src="script.js"></script>
 </body>
 </html>
