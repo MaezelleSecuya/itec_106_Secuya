@@ -1,0 +1,67 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/**** Calculator Content ****/
+#calculator{
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    max-width: 400px;
+    overflow: hidden;
+}
+#output{
+    width: 100%;
+    padding: 30px;
+    font-size: 40px;
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 0%, 25%);
+    color: white;
+}
+
+
+/**** Circle Buttons ****/
+button{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(0, 0%, 50%);
+}
+button:active{
+    background-color: hsl(0, 0%, 60%);
+}
+#buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+    padding: 20px;  
+}
+
+/**** Operator Buttons ****/
+.operator-button{
+    background-color: hsl(38, 100%, 50%);
+}
+.operator-button:hover{
+    background-color: hsl(43, 100%, 70%);
+}
+.operator-button:active{
+    background-color: hsl(43, 100%, 80%);
+}
